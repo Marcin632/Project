@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMistrz</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+		<div id="logo-container">
+            <div id="logo-animation"><span style="color:#e74c3c;">Q</span><span style="color:yellow;">M</span></div>
+			<div ><a href="Strona główna.html"<span class="logo"><span style="color:#e74c3c;">Quiz</span><span style="color:yellow;">Mistrz</span></span></a></div>
+        </div>
+       
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Kategorie pytań.html" id="menu">Kategorie pytań</a></li>
+            <li><a href="Dodaj pytanie.html" id="menu">Dodaj pytanie</a></li>
+            <li><a href="Pytanie.html" id="menu">Losuj pytanie</a></li>
+        </ul>
+    </nav>
+
+    <section class="home-section">
+        <form action="#" method="post">
+			<div id="question">Pytanie numer jeden co można zrobić w takiej sytuacji:Pytanie numer jeden co można zrobić i takiej sytuacji:Pytanie numer jeden co można zrobić i takiej sytuacji:</div>
+            <div class="home-section">
+				<div class="category-tile" onclick="toggleClicked(this)">
+					<label><input type="radio" name="answer" value="a"> Odpowiedź A Pytanie numer jeden co można zrobić i takiej sytuacji:</label>
+				</div>
+				<div class="category-tile" onclick="toggleClicked(this)">
+					<label><input type="radio" name="answer" value="b"> Odpowiedź B</label>
+				</div>
+				<div class="category-tile" onclick="toggleClicked(this)">
+					<label><input type="radio" name="answer" value="c"> Odpowiedź C</label>
+				</div>
+				<div class="category-tile" onclick="toggleClicked(this)">
+					<label><input type="radio" name="answer" value="d"> Odpowiedź D</label>
+				</div>
+            </div>
+
+            <input type="submit" value="Odpowiedz">
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Twoja Aplikacja. Wszelkie prawa zastrzeżone.
+    </footer>
+    <script>
+        function toggleClicked(clickedTile) {
+            var tiles = document.querySelectorAll('.category-tile');
+
+            // Przywracanie poprzedniego stanu dla wszystkich kafelków
+            tiles.forEach(function(tile) {
+                tile.classList.remove('clicked');
+            });
+
+            // Ustawianie stanu dla aktualnie klikniętego kafelka
+            clickedTile.classList.add('clicked');
+        }
+    </script>
+</body>
+</html>

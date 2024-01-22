@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMistrz</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo-container">
+            <div id="logo-animation"><span style="color:#e74c3c;">Q</span><span style="color:yellow;">M</span></div>
+            <div><a href="Strona główna.html"<span class="logo"><span style="color:#e74c3c;">Quiz</span><span style="color:yellow;">Mistrz</span></span></a></div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Kategorie pytań.html" id="menu">Kategorie pytań</a></li>
+            <li><a href="Dodaj pytanie.html" id="menu">Dodaj pytanie</a></li>
+            <li><a href="Pytanie.html" id="menu">Losuj pytanie</a></li>
+        </ul>
+    </nav>
+
+    <section class="home-section">
+      
+	  <form id="question-form">
+    <label for="question-type">Typ pytania:</label>
+    <select id="question-type" name="question-type" required>
+	  <option value="" disabled selected>Wybierz z listy</option>
+      <option value="Programowanie">Programowanie</option>
+      <option value="Bazy_danych">Bazy danych</option>
+	  <option value="Bezpieczeństwo_informatyczne">Bezpieczeństwo informatyczne</option>
+	  <option value="Sieci_komputerowe">Sieci komputerowe</option>
+	  <option value="Rozwój_oprogramowania">Rozwój oprogramowania</option>
+	  <option value="Systemy_operacyjne">Systemy operacyjne</option>
+	  <option value="Rozwój_mobilny">Rozwój mobilny</option>
+	  <option value="Analiza_Danych">Analiza Danych</option>
+	  <option value="Sztuczna_inteligencja_i_Machine_Learning">Sztuczna inteligencja i Machine Learning</option>
+	  <option value="Inżynieria_oprogramowania">Inżynieria oprogramowania</option>
+    </select>
+
+    <label for="question">Treść pytania:</label>
+    <input type="text" id="question" name="question" required>
+
+    <label for="correct-answer">Prawidłowa odpowiedź:</label>
+    <input type="text" id="correct-answer" name="correct-answer" required>
+
+    <label for="wrong-answer-1">Nieprawidłowa odpowiedź 1:</label>
+    <input type="text" id="wrong-answer-1" name="wrong-answer-1" required>
+
+    <label for="wrong-answer-2">Nieprawidłowa odpowiedź 2:</label>
+    <input type="text" id="wrong-answer-2" name="wrong-answer-2" required>
+
+    <label for="wrong-answer-3">Nieprawidłowa odpowiedź 3:</label>
+    <input type="text" id="wrong-answer-3" name="wrong-answer-3" required>
+
+    <button type="submit">Dodaj Pytanie</button>
+  </form>
+	  
+    </section>
+
+    <footer>
+        &copy; 2024 Twoja Aplikacja. Wszelkie prawa zastrzeżone.
+    </footer>
+
+</body>
+</html>
