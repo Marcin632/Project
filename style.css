@@ -6,13 +6,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-#home {
-    background-image: url('background.jpg');
+	background-image: url('background.jpg');
     background-size: cover;
     background-position: center center;
 }
-
 header {
     background-color: #333;
     color: #fff;
@@ -59,14 +56,16 @@ a {
 
 .logo {
     font-family: 'Arial', sans-serif;
-    font-size: 34px;
+    font-size: 38px;
     font-weight: bold;
     color: white;
     text-align: center;
     margin: 20px 0;
+	text-shadow: -2px -2px 2px #009933, 2px -2px 2px #009933, -2px 2px 2px #009933, 2px 2px 2px #009933;
 }
 
 nav {
+	
     background-color: #444;
     color: #fff;
     padding: 10px;
@@ -84,11 +83,13 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 15px;
+	
 }
 
 #menu {
     text-decoration: none;
     color: #fff;
+	font-size: 18px;
 }
 
 section {
@@ -192,7 +193,7 @@ label {
     font-size: 40px;
     margin-bottom: 20px;
 	color: white;
-    text-shadow: -2px -2px 2px #333, 2px -2px 2px #333, -2px 2px 2px #333, 2px 2px 2px #333;
+  text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
 
 }
 
@@ -204,7 +205,8 @@ label {
     font-size: 24px;
     margin-bottom: 40px;
 	color: white;
-    text-shadow: -2px -2px 2px #333, 2px -2px 2px #333, -2px 2px 2px #333, 2px 2px 2px #333;
+	 text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+   //* text-shadow: -2px -2px 2px #333, 2px -2px 2px #333, -2px 2px 2px #333, 2px 2px 2px #333; *//
 
 }
 
